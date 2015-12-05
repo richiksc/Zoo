@@ -46,6 +46,22 @@ public class Inventory {
 
   public void add(Product p) {
     stock.add(p);
+    revenue -= p.getMfrPrice();
+  }
+
+  public void add(Product[] products) {
+    for (Product product : products) {
+      stock.add(product);
+      revenue -= product.getMfrPrice();
+    }
+
+  }
+
+  public void add(Product p, int quantity) {
+    for (int i = 0; i < quantity; i++) {
+      stock.add(p);
+      revenue -= p.getMfrPrice();
+    }
   }
 
   public Product get(int i) {

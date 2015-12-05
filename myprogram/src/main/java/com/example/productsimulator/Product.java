@@ -31,10 +31,18 @@ public class Product {
     return price;
   }
 
+  /**
+   * Updates the retail price of the product, which will be used to add to revenue.
+   * @param price
+   */
   public void setPrice(double price) {
     this.price = price;
   }
 
+  /**
+   * Returns the descriptive name of the product which is understandable by humans.
+   * @return The product name
+   */
   public String getName() {
     return name;
   }
@@ -45,21 +53,23 @@ public class Product {
 
   @Override
   public String toString() {
-    return "Product #" + this.getSku() + " | " +
-        this.getName() + " | " +
-        "$" + Double.toString(this.getPrice());
+    return String.format("Product #%s | %-50s | %.2f", getSku(), getName(), getPrice());
   }
 
+  /**
+   * Generates a random six-digit SKU (Stock-Keeping Unit) for referring to the product in the
+   * inventory (<code>Inventory</code>)
+   * @see Inventory
+   * @return
+   */
   public static String genRandSku() {
-    String id = Integer.toString(Util.getRandomInRange(0, 999999));
-    if (id.length() < 6) {
-      String zeroes = new String();
-      for (int i = 0; i < 6 - id.length(); i++) {
-        zeroes += "0";
-      }
-      id = zeroes + id;
-    }
-
+    int prodNum = Util.getRandomInRange(0, 999999);
+    String id = String.format("%06d", prodNum);
     return id;
+  }
+
+  @Override
+  public Object clone() throws CloneNotSupportedException {
+    return super.clone();
   }
 }
