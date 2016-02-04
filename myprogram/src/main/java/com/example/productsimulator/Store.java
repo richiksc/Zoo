@@ -8,6 +8,7 @@ import java.util.Scanner;
 /**
  * A simulation of a store that buys and stocks products, and sells one every business day
  * until they go bankrupt.
+ * Created by Richik SC.
  */
 public class Store {
 
@@ -102,7 +103,7 @@ public class Store {
     if(!results.exists()) {
       results.createNewFile();
     }
-    FileWriter writer = new FileWriter(results);
+    FileWriter writer = new FileWriter(results, true);
 
     inventory.adjustRevenue(capital);
     System.out.println("Revenue at opening: " + inventory.getRevenue());
