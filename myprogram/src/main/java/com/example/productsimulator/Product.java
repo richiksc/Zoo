@@ -1,6 +1,7 @@
 package com.example.productsimulator;
 
 /**
+ * A class to represent a product traded in the store.
  * Created by Owner on 11/27/2015.
  */
 public class Product {
@@ -33,7 +34,7 @@ public class Product {
 
   /**
    * Updates the retail price of the product, which will be used to add to revenue.
-   * @param price
+   * @param price int The new price of the product.
    */
   public void setPrice(double price) {
     this.price = price;
@@ -41,7 +42,7 @@ public class Product {
 
   /**
    * Returns the descriptive name of the product which is understandable by humans.
-   * @return The product name
+   * @return String name
    */
   public String getName() {
     return name;
@@ -60,7 +61,7 @@ public class Product {
    * Generates a random six-digit SKU (Stock-Keeping Unit) for referring to the product in the
    * inventory (<code>Inventory</code>)
    * @see Inventory
-   * @return
+   * @return String id
    */
   public static String genRandSku() {
     int prodNum = Util.getRandomInRange(0, 999999);

@@ -1,6 +1,7 @@
 package com.example.productsimulator;
 
 /**
+ * A generic apple class.
  * Created by Owner on 11/29/2015.
  */
 public class Apple extends Food {
