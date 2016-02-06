@@ -19,13 +19,17 @@ public class Store {
     boolean exit = false;
 
     scanner = new Scanner(System.in);
-
-    System.out.println("Would you like to `run` the simulation, `test` the methods, get `info` " +
-        "about the products or `exit`?");
+    System.out.println("Type 'help' for command list.");
     while (!exit) {
-      System.out.print("> ");
+      System.out.print(System.getProperty("user.name") + "/productsimulator> ");
       cmd = scanner.nextLine();
       switch (cmd) {
+        case "help":
+          System.out.println("help  -  Show the help page (this screen).");
+          System.out.println("run   -  Run the store simulation.");
+          System.out.println("test  -  Test the methods (with verbose output).");
+          System.out.println("exit  -  Exit the program and close the process.");
+          break;
         case "run":
           System.out.print("Initial seed capital: ");
           double iCap = Double.parseDouble(scanner.nextLine());
@@ -68,7 +72,7 @@ public class Store {
           System.out.println(bakingApples);
           break;
         default:
-          System.out.println("Not a valid command!");
+          System.out.println("Error - Invalid command");
           break;
       }
     }
