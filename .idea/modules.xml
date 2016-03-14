@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Zoo.iml" filepath="$PROJECT_DIR$/Zoo.iml" />
       <module fileurl="file://$PROJECT_DIR$/guitest/guitest.iml" filepath="$PROJECT_DIR$/guitest/guitest.iml" />
       <module fileurl="file://$PROJECT_DIR$/myprogram/myprogram.iml" filepath="$PROJECT_DIR$/myprogram/myprogram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/programmingclass/programmingclass.iml" filepath="$PROJECT_DIR$/programmingclass/programmingclass.iml" />
     </modules>
   </component>
 </project>
