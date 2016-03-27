@@ -1,1 +1,1 @@
-include ':myprogram'
+include ':myprogram', ':guitest', ':programmingclass'

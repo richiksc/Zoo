@@ -10,7 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/guitest" />
             <option value="$PROJECT_DIR$/myprogram" />
+            <option value="$PROJECT_DIR$/programmingclass" />
           </set>
         </option>
       </GradleProjectSettings>
