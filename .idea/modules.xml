@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Zoo.iml" filepath="$PROJECT_DIR$/Zoo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/guitest/guitest.iml" filepath="$PROJECT_DIR$/guitest/guitest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myprogram/myprogram.iml" filepath="$PROJECT_DIR$/myprogram/myprogram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Zoo.iml" filepath="$PROJECT_DIR$/.idea/modules/Zoo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/guitest/guitest.iml" filepath="$PROJECT_DIR$/.idea/modules/guitest/guitest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myprogram/myprogram.iml" filepath="$PROJECT_DIR$/.idea/modules/myprogram/myprogram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/programmingclass/programmingclass.iml" filepath="$PROJECT_DIR$/.idea/modules/programmingclass/programmingclass.iml" />
       <module fileurl="file://$PROJECT_DIR$/programmingclass/programmingclass.iml" filepath="$PROJECT_DIR$/programmingclass/programmingclass.iml" />
     </modules>
   </component>
