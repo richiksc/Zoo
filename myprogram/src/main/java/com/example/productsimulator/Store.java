@@ -21,13 +21,14 @@ public class Store {
     scanner = new Scanner(System.in);
     System.out.println("Type 'help' for command list.");
     while (!exit) {
-      System.out.print(System.getProperty("user.name") + "/productsimulator> ");
+      System.out.print(System.getProperty("user.name") + ":productsimulator > ");
       cmd = scanner.nextLine();
       switch (cmd) {
         case "help":
           System.out.println("help  -  Show the help page (this screen).");
           System.out.println("run   -  Run the store simulation.");
           System.out.println("test  -  Test the methods (with verbose output).");
+          System.out.println("info  -  Print available product details.");
           System.out.println("exit  -  Exit the program and close the process.");
           break;
         case "run":

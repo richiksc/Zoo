@@ -49,12 +49,12 @@ public class Inventory {
     revenue -= p.getMfrPrice();
   }
 
-  public void add(Product[] products) {
+  public double add(Product[] products) {
     for (Product product : products) {
       stock.add(product);
       revenue -= product.getMfrPrice();
     }
-
+    return revenue;
   }
 
   public void add(Product p, int quantity) {
